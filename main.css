@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto,sans-serif;
+}
+
+
+header  {
+    background-color: royalblue;
+    padding: 8px 20px;
+    color: #fff;
+    padding: 0 20px;
+    width: 100%;
+}
+
+header a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #fff;
+    padding: 8px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    padding: 8px;
+    margin: 0;
+}
+
+header nav a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+.container,
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1024px;
+    width: 100%;
+    }
+
+h2 {
+    margin: 8px;
+}
+
+p {
+    font-weight: 500;
+    font-size: 1em;
+    margin: 8px;
+}
+
+h1 {
+    font-size: 32px;
+    font-style: italic;
+    padding: 16px;
+}
+
+.sobre img {
+    max-width: 400px;
+    margin-right: 24px;
+}
+
+.lista-jogos img {
+    width: 210px;
+    height: 300px;
+    padding: 8px;
+    margin: 16px;
+    list-style: none;
+}
+
+.jogos {
+    margin: 20px auto;
+    text-align: center;
+    font-size: 16px;
+}
+
+.jogos h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 250;
+    font-style: italic;
+}
+
+.jogos p {
+    font-size: 16px;
+}
+
+.jogos ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+.jogos button {
+    margin: 16px;
+    background-color: royalblue;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Sem borda padrão */
+    border-radius: 25px; /* Bordas arredondadas */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+.jogos button:hover { /*efeito ao passar mouse pelo botao */
+    background-color: rgb(36, 67, 158); /* Cor mais escura quando o mouse passar */
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    /* Ajustes gerais para o container principal */
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    /* Seção "Sobre a Loja" */
+    .sobre {
+        flex: 1 1 45%;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .sobre img {
+        max-width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .sobre h2 {
+        margin-bottom: 16px;
+    }
+    
+    /* Estilização da lista de produtos */
+    .lista-jogos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Dois produtos por linha */
+        gap: 16px;
+        list-style: none;
+    }
+
+    .lista-jogos li {
+        background: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 16px;
+        text-align: center;
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .lista-jogos li:hover {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .jogos img {
+        width: 250px;
+        height: 300px;
+        margin: 0 auto 16px;
+    }
+
+    .jogos button {
+        width: 100%;
+        background-color: royalblue;
+        color: white;
+        font-size: 16px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .jogos button:hover {
+        background-color: rgb(36, 67, 158);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        display: block;
+        text-align: center;
+    }
+
+    header ul {
+        text-align: center;
+        justify-content: space-between;
+    }
+}
+
+
+
+
+
+
